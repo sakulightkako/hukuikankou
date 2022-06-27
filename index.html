@@ -1,1 +1,18 @@
-<hi>かこのさんぽ/hi>
+<hi>かこのさんぽ
+<script type="module">
+    import {bg,show} from "https://js.sabae.cc/egadv.js";
+
+    await bg(2519);
+for (;;){
+    let a=await show("ここはどこでしょう？",["富山","石川","福井","その他"]);
+    if(a == "その他"){
+        await show("正解！でもどこだかわかりません")
+        await show("どこかは知りませんが、北陸ではありません。")
+        await show("・・・")
+        await show("知らんけど")
+        break;
+    }else{
+        await show("違うよ。")
+    }
+}
+</script>
